@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>
+  Subtraction App
+  </h1>
+  <form onsubmit="calculate()">
+    <input id="number1" placeholder="First Number" />
+    
+    <input id="number2" placeholder="Second Number" />
+    <button role="submit">
+      Calculate
+    </button>
+  </form>
+  <div id="answer">
+   
+  </div>
+</div>
+<script>
+function calculate() {
+  let number1 = document.getElementById('number1').innerHTML;
+  let number2 = document.getElementById('number2').innerHTML;
+  
+  let answer = number1 + number2;
+  document.getElementById('answer').innerHTML = answer;
+}
+</script>
